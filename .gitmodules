@@ -1,4 +1,4 @@
 [submodule "blogposts"]
 	path = blogposts
-	url = https://github.com/fabricated-world/fable
+	url = https://github.com/kalitsune/website
 	branch = blogposts

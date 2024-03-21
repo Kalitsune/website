@@ -1,10 +1,9 @@
 <script>
-	export let description = 'Made with ♥ by the people at fabricated';
+	export let description = 'Made with ♥  by <a href="https://github.com/Kalitsune">Kalitsune</a>';
 </script>
 
 <footer>
-	<p>{description}</p>
-	<p>note: this website is still in early access</p>
+	<p>{@html description}</p>
 </footer>
 
 <style>
