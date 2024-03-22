@@ -467,9 +467,7 @@ DXQSVIUFVQYGIUFNNQCQJSQATVLZQNLZQVFAVYIAYVJHZSKHZVQDSFSQTQJZFVAHYSQJHVFYFHATIAVN
 
 From this result we can make two observations:
 1. There's an issue somewhere
-2. The creator of this challenge is playing ugly and is trying to prevent us from guessing the letters by doing a [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis)
-
-![[Not difficult enought.png]]
+2. The creator of this challenge is playing dirty and is trying to prevent us from guessing the letters by doing a [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis)
 
 For the first observation, I think I know where the issue is coming from: we still haven't guessed the substitution matrix yet.
 

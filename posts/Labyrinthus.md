@@ -403,7 +403,7 @@ Done! it's looking much better:
   ##########################
 ```
 
-## Submit our answer
+## Submiting our answer
 Now that we solved the maze we only need to submit it and it should be done!
 ```py
 # send the solution
