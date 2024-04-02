@@ -127,9 +127,9 @@ Dat File: (the path of the persistence file we created in the previous step):
 Confirm, you should be left with something looking like that:
 ![Persistence Plugin Tab Upon Completion](/blog/PersistentFedoraOnVentoy/PersistencePluginTabUponCompletion.png)
 
-While this would usually suffice for a classic persistent system installation, this will not work on Fedora. To learn how to make it work with fedora, continue reading:
+While this would usually suffice for a classic persistent system installation, this will not work on Fedora. To learn how to make it work with fedora, continue reading: 
 
-## Making Fedora Persistent
+## Making Fedora Persistent
 While reading the [Ventoy Persistence Plugin documentation](https://www.ventoy.net/en/plugin_persistence.html), you can see that making the plugin work with Fedora requires you to "add `selinux=0` in the boot option"
 
 SELinux (Security-Enhanced Linux) is an utility that provides control access to linux. However, while it is pretty useful, it is not compatible with Ventoy, we'll have to remove it. 
@@ -140,7 +140,7 @@ Thankfully, SELinux can easily be disabled by adding `selinux=0` to the kernel o
 
 And since those are defined by a file inside of the ISO, we'll have to use a new plugin, the [Boot Conf Replace Plugin](https://www.ventoy.net/en/plugin_bootconf_replace.html).
 
-### Getting the original boot conf from the ISO
+### Getting the original boot conf from the ISO
 To ensure that we do not break anything, we'll use the original boot config as our basis. 
 
 You can skip this part if you don't care whether your boot config is up to date or not as mine will be included in [Patching the boot config file](#patching-the-boot-config-file) but it is still highly recommended that you follow this step.
@@ -155,7 +155,7 @@ Your ISO should appear in your system drive list:
 on fedora, the default boot loader is Grub, you'll find the regular grub.cfg at `/boot/grub2/grub.cfg`and the EFI grub.cfg at `/EFI/BOOT/grub.cfg`
 Copy both of them in a directory of your ventoy drive before moving on to next step.
 
-### Patching the boot config file
+### Patching the boot config file
 Now that we've extracted the boot configs from the ISOs we can edit them so that SELinux is disabled
 
 Here's my grub.cfg:
