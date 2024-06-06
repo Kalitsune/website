@@ -70,7 +70,7 @@
 					logo: 'Instagram-Logo.svg',
 					text: 'Cosplays',
 					alt: 'Instagram',
-					back_color: 'linear-gradient(-135deg, #1400c8, #b900b4, #f50000)',
+					back_color: 'linear-gradient(-135deg, #f17b41, #eofba2, #cd4bc9)',
 					text_color: '#fff'
 				},
 			]}
