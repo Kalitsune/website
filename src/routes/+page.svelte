@@ -64,7 +64,15 @@
 					alt: 'Instagram',
 					back_color: 'linear-gradient(-135deg, #1400c8, #b900b4, #f50000)',
 					text_color: '#fff'
-				}
+				},
+    {
+					url: 'https://www.instagram.com/kalitsune_cosplay',
+					logo: 'Instagram-Logo.svg',
+					text: 'Cosplays',
+					alt: 'Instagram',
+					back_color: 'linear-gradient(-135deg, #1400c8, #b900b4, #f50000)',
+					text_color: '#fff'
+				},
 			]}
 			style="width: 18rem"
 		/>
