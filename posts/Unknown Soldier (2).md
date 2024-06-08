@@ -2,7 +2,7 @@
 title: Unknown Soldier 2
 description: A steganography challenge concisting on fixing a PNG image by hand. 
 date: '03/22/2024'
-icon: https://wiki.nobrackets.fr/img/logo.png
+icon: https://avatars.githubusercontent.com/u/127790981?s=200&v=4
 author: Kalitsune
 tags:
   - steganography 

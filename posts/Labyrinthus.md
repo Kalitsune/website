@@ -2,7 +2,7 @@
 title: Labyrinthus
 description: My approach on solving the Labyrinthus challenge at NBCTF
 date: '03/22/2024'
-icon: https://wiki.nobrackets.fr/img/logo.png
+icon: https://avatars.githubusercontent.com/u/127790981?s=200&v=4
 author: Kalitsune
 tags:
   - programming
