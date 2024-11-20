@@ -15,37 +15,37 @@
 <svelte:window bind:innerWidth />
 
 <nav>
-	{#if innerWidth < 768}
-		<div
-			aria-label="Open Sidebar"
-			aria-pressed="false"
-			role="button"
-			tabindex="0"
-			class="toggle"
-			on:click={() => {
-				sidebar_opened = !sidebar_opened;
-			}}
-			on:keydown={() => {
-				sidebar_opened = !sidebar_opened;
-			}}
-		>
-			<Menu />
-		</div>
-	{/if}
-	<a href="/" class="title">{env.PUBLIC_NAME}</a>
-	{#if innerWidth >= 768}
-		<ul class="links">
-			{#each links as link}
-				<li>
-					<a href={link.path}>
-						{link.name}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	{/if}
+  {#if innerWidth < 768}
+    <div
+      aria-label="Open Sidebar"
+      aria-pressed="false"
+      role="button"
+      tabindex="0"
+      class="toggle"
+      on:click={() => {
+        sidebar_opened = !sidebar_opened;
+      }}
+      on:keydown={() => {
+        sidebar_opened = !sidebar_opened;
+      }}
+    >
+      <Menu />
+    </div>
+  {/if}
+  <a href="/" class="title">{env.PUBLIC_NAME}</a>
+  {#if innerWidth >= 768}
+    <ul class="links">
+      {#each links as link}
+        <li>
+          <a href={link.path}>
+            {link.name}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  {/if}
 
-	<ThemeToggle />
+  <ThemeToggle />
 </nav>
 
 {#if innerWidth < 768}
@@ -103,12 +103,12 @@
 
 <style>
 	nav {
-		padding: var(--size-7) var(--size-2);
+    padding: var(--size-7) var(--size-2);
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.links {
+  .links {
 		display: flex;
 		flex-direction: column;
 		gap: var(--size-3);
@@ -132,6 +132,10 @@
 			flex-direction: row;
 			gap: var(--size-7);
 		}
+    
+    .sidebar-container {
+		  padding: var(--size-7) var(--size-4);
+    }
 	}
 
 	.sidebar {

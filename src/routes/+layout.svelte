@@ -3,7 +3,7 @@
 	import 'open-props/normalize';
 	import 'open-props/buttons';
 
-	import { Home, NotepadText } from 'lucide-svelte';
+	import { Home, NotepadText, KeyRound } from 'lucide-svelte';
 
 	import '../app.css';
 
@@ -15,7 +15,8 @@
 	<Header
 		links={[
 			{ name: 'Home', path: '/', icon: Home },
-			{ name: 'Blog', path: '/blog', icon: NotepadText }
+			{ name: 'Blog', path: '/blog', icon: NotepadText },
+			{ name: 'GPG', path: '/gpg', icon: KeyRound }
 		]}
 	/>
 
@@ -44,7 +45,7 @@
 
 	@media (min-width: 1440px) {
 		.layout {
-			padding-inline: 0;
+			padding-inline: var(--size-4);
 		}
 	}
 </style>
