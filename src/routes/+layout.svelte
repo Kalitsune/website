@@ -16,7 +16,6 @@
 		links={[
 			{ name: 'Home', path: '/', icon: Home },
 			{ name: 'Blog', path: '/blog', icon: NotepadText },
-			{ name: 'GPG', path: '/gpg', icon: KeyRound }
 		]}
 	/>
 
