@@ -13,8 +13,8 @@
 
 <div>
 	<img src="https://avatars.githubusercontent.com/u/74075397?v=4" alt="My pfp!" />
-	<h2>{env.PUBLIC_NAME}</h2>
-	<p>Hello! Welcome to my website!</p>
+	<h1>{env.PUBLIC_NAME}</h1>
+	<p class="greetings">Hello! Welcome to my website!</p>
 	{#key dark_theme}
 		<SocialCardArray
 			socials={[
@@ -24,14 +24,18 @@
 					text: 'GitHub',
 					alt: 'Github',
 					back_color: '#000',
-					text_color: '#fff'
+					text_color: '#fff',
+          style: "height: 3.5rem"
+
 				},
 				{
 					url: 'https://stackoverflow.com/users/15751382/kalitsune',
 					logo: 'https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg',
 					text: '<p><span style="font-weight: var(--font-weight-5);">stack</span>overflow</p>',
 					alt: 'StackOverflow',
-					back_color: 'var(--surface-2)'
+					back_color: 'var(--surface-2)',
+          style: "height: 3.5rem"
+
 				},
 				{
 					url: 'mailto:fanny@kalitsune.net',
@@ -39,7 +43,9 @@
 					text: `Email Me!`,
 					alt: 'Email',
 					back_color: '#0078e5',
-					text_color: '#fff'
+					text_color: '#fff',
+          style: "height: 3.5rem"
+
 				},
 				{
 					url: 'https://discord.gg/s2TrpTD6C2',
@@ -47,7 +53,9 @@
 					text: '@kalitsune.net',
 					alt: 'Discord',
 					back_color: '#5865F2',
-					text_color: '#fff'
+					text_color: '#fff',
+          style: "height: 3.5rem"
+
 				},
 				{
 					url: 'https://hub.docker.com/u/kalithekitsune',
@@ -55,7 +63,9 @@
 					text: 'Dockerhub',
 					alt: 'DockerHub',
 					back_color: dark_theme ? '#00084D' : '#E5F2FC',
-					text_color: dark_theme ? '#fff' : '#1D63ED'
+					text_color: dark_theme ? '#fff' : '#1D63ED',
+          style: "height: 3.5rem"
+
 				},
 				{
 					url: 'https://www.instagram.com/kalitsune',
@@ -63,7 +73,8 @@
 					text: 'Instagram',
 					alt: 'Instagram',
 					back_color: 'linear-gradient(-135deg, #1400c8, #b900b4, #f50000)',
-					text_color: '#fff'
+					text_color: '#fff',
+          style: "height: 3.5rem"
 				},
     {
 					url: 'https://www.instagram.com/kalitsune_cosplay',
@@ -71,10 +82,12 @@
 					text: 'Cosplays',
 					alt: 'Instagram',
 					back_color: 'linear-gradient(-135deg, #f17b41, #e05ba2, #cd4bc9)',
-					text_color: '#fff'
+					text_color: '#fff',
+          style: "height: 3.5rem"
+
 				},
 			]}
-			style="width: 18rem"
+			style="width: var(--size-15)"
 		/>
 	{/key}
 	<p>Thank you for your time!</p>
@@ -88,8 +101,14 @@
 		align-items: center;
 		gap: var(--size-7);
 	}
+
+  p {
+    font-size: var(--font-size-fluid-1);
+    text-align: center;
+  }
+
 	img {
 		border-radius: var(--radius-round);
-		width: var(--size-11);
+		width: var(--size-12);
 	}
 </style>

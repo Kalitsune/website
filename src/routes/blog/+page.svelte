@@ -14,6 +14,7 @@
 </svelte:head>
 
 <section>
+  <h1> The Kitsune's Blog</h1>
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
@@ -48,6 +49,10 @@
 </section>
 
 <style>
+  h1 {
+    margin-bottom: var(--size-7)
+  }
+
 	.posts {
 		display: grid;
 		gap: var(--size-7);
@@ -85,7 +90,7 @@
 	}
 
 	.title {
-		font-size: var(--font-size-fluid-3);
+		font-size: var(--font-size-fluid-2);
 		text-transform: capitalize;
 	}
 

@@ -38,6 +38,7 @@
       {#each links as link}
         <li>
           <a href={link.path}>
+            <span class="sidebar-icon"><svelte:component this={link.icon} /></span>
             {link.name}
           </a>
         </li>
