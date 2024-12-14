@@ -2,6 +2,7 @@
 	import * as env from '$env/static/public';
 
 	import SocialCardArray from '$lib/components/SocialCardArray.svelte';
+	import Status from '$lib/components/Status.svelte';
 	import { theme } from '$lib/themes';
 
 	let dark_theme: boolean;
@@ -12,6 +13,7 @@
 </script>
 
 <div>
+  <Status username="kalitsune"/>
 	<img src="https://avatars.githubusercontent.com/u/74075397?v=4" alt="My pfp!" />
 	<h1>{env.PUBLIC_NAME}</h1>
 	<p class="greetings">Hello! Welcome to my website!</p>
