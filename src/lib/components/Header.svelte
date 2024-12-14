@@ -133,10 +133,6 @@
 			flex-direction: row;
 			gap: var(--size-7);
 		}
-    
-    .sidebar-container {
-		  padding: var(--size-7) var(--size-4);
-    }
 	}
 
 	.sidebar {
