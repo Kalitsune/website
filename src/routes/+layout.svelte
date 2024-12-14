@@ -40,7 +40,6 @@
 		padding: var(--size-9) 0;
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
-		overflow-x: hidden;
 		flex: 1;
 	}
 

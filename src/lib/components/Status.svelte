@@ -24,11 +24,20 @@
 .statuscafe {
   background-color: var(--surface-1);
   border-radius: var(--radius-4);
+  width: var(--size-13);
   position: relative;
-  width: var(--size-14);
-  bottom: -1rem;
+  right: -2rem;
+  bottom: -1.5rem;
   padding: var(--size-3);
   filter: drop-shadow(1px 1px var(--border)) drop-shadow(-1px -1px var(--border)) drop-shadow(1px -1px var(--border)) drop-shadow(-1px 1px var(--border)) drop-shadow(1px 0px var(--border)) drop-shadow(0 1px var(--border)) drop-shadow(-1px 0px var(--border)) drop-shadow(0px -1px var(--border));
+}
+
+@media (min-width: 768px) {
+  .statuscafe {
+      right: auto;
+      bottom: -1rem;
+      width: var(--size-14);
+  }
 }
 
 .statusball {

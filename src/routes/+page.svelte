@@ -10,7 +10,12 @@
 	theme.subscribe((value) => {
 		dark_theme = value === 'dark';
 	});
+	
+  $: innerWidth = 0;
+  $: buttonStyle = innerWidth > 768 ? "height: 3.5rem" : "";
 </script>
+
+<svelte:window bind:innerWidth />
 
 <div>
   <Status username="kalitsune"/>
@@ -27,8 +32,7 @@
 					alt: 'Github',
 					back_color: '#000',
 					text_color: '#fff',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 				{
 					url: 'https://stackoverflow.com/users/15751382/kalitsune',
@@ -36,8 +40,7 @@
 					text: '<p><span style="font-weight: var(--font-weight-5);">stack</span>overflow</p>',
 					alt: 'StackOverflow',
 					back_color: 'var(--surface-2)',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 				{
 					url: 'mailto:fanny@kalitsune.net',
@@ -46,8 +49,7 @@
 					alt: 'Email',
 					back_color: '#0078e5',
 					text_color: '#fff',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 				{
 					url: 'https://discord.gg/s2TrpTD6C2',
@@ -56,8 +58,7 @@
 					alt: 'Discord',
 					back_color: '#5865F2',
 					text_color: '#fff',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 				{
 					url: 'https://hub.docker.com/u/kalithekitsune',
@@ -66,8 +67,7 @@
 					alt: 'DockerHub',
 					back_color: dark_theme ? '#00084D' : '#E5F2FC',
 					text_color: dark_theme ? '#fff' : '#1D63ED',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 				{
 					url: 'https://www.instagram.com/kalitsune',
@@ -76,20 +76,19 @@
 					alt: 'Instagram',
 					back_color: 'linear-gradient(-135deg, #1400c8, #b900b4, #f50000)',
 					text_color: '#fff',
-          style: "height: 3.5rem"
+          style: buttonStyle,
 				},
-    {
+        {
 					url: 'https://www.instagram.com/kalitsune_cosplay',
 					logo: 'Instagram-Logo.svg',
 					text: 'Cosplays',
 					alt: 'Instagram',
 					back_color: 'linear-gradient(-135deg, #f17b41, #e05ba2, #cd4bc9)',
 					text_color: '#fff',
-          style: "height: 3.5rem"
-
+          style: buttonStyle,
 				},
 			]}
-			style="width: var(--size-15)"
+			style="width: {innerWidth < 768 ? "fit-content" : "var(--size-15)"};"
 		/>
 	{/key}
 	<p>Thank you for your time!</p>
@@ -100,7 +99,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+    align-items: center;
 		gap: var(--size-7);
 	}
 
