@@ -11,5 +11,5 @@
 </script>
 
 <PageTransition url={data.url}>
-	<slot />
+  <slot />
 </PageTransition>

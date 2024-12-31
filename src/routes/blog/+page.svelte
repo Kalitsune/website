@@ -24,7 +24,7 @@
 						src={post.icon ||
 							'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='}
 						alt=""
-						loading="lazy"
+		loading="lazy"
 					/>
 					<div>
 						<a href="/blog/{post.slug}" class="title">{post.title}</a>

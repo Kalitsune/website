@@ -144,6 +144,11 @@ li {
 	color: var(--text-1);
 }
 
+:where(:not(pre)>code,kbd) {
+  white-space: pre-wrap;
+	word-break: break-all;
+}
+
 .blog-content :is(h1, h2, h3, h4, h5, h6) {
 	position: relative;
 	left: calc(var(--size-5) * -1);
@@ -200,4 +205,5 @@ li {
 	background: var(--surface-4);
 	white-space: pre-wrap;
 	word-break: break-all;
+  overflow: hidden;
 }

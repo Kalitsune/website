@@ -15,10 +15,9 @@
 
 	<div class="tags">
 		{#each meta.tags as tag}
-			<span class="surface-4"
-				>#
-				<p class="">{tag}</p></span
-			>
+			<span class="surface-4">
+        #<p>{tag}</p>
+      </span>
 		{/each}
 	</div>
 
@@ -63,4 +62,9 @@
 		color: var(--text-1);
 		font-size: 90%;
 	}
+
+  .blog-content {
+		max-width: 85vw;
+    overflow-x: hidden;
+  }
 </style>
