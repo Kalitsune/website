@@ -41,6 +41,7 @@
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
 		flex: 1;
+    max-width: 85vw;
 	}
 
 	@media (min-width: 1440px) {

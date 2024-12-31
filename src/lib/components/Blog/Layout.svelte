@@ -61,10 +61,5 @@
 	.tags p {
 		color: var(--text-1);
 		font-size: 90%;
-	}
-
-  .blog-content {
-		max-width: 85vw;
-    overflow-x: hidden;
   }
 </style>
