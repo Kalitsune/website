@@ -8,6 +8,9 @@
     fetch(`https://status.cafe/users/${username}/status.json`)
     .then( r => r.json() )
     .then( r => data = r)
+    .then( _ => {
+      data.content = (new DOMParser()).parseFromString(data.content, "text/html").documentElement.textContent;
+    });
   });
 </script>
 <div class="statuscafe">
