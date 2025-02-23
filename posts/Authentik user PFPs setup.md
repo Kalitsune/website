@@ -1,7 +1,7 @@
 ---
 title: Auto cropping Authentik user avatars
 description: Tutorial on how to setup user avatars in authentik.
-date: '23/02/2025'
+date: '02/23/2025'
 icon: https://cdn.kalitsune.net/admin/files/assets/Services/FoxID/Square.svg
 author: Kalitsune
 tags:
