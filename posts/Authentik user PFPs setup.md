@@ -249,7 +249,7 @@ if "avatar" in prompt_data.get("attributes", {}):
         
         # Build the imgproxy URL for a square crop using the rs:fill transformation.
         # This transformation will resize and crop the image to TARGET_SIZE x TARGET_SIZE.
-        imgproxy_transform = f"rs:fill:{TARGET_SIZE}:{TARGET_SIZE}"
+        imgproxy_transform = f"rs:force:{TARGET_SIZE}:{TARGET_SIZE}"
         imgproxy_url = f"{IMGPROXY_URL}/insecure/{imgproxy_transform}/plain/{original_url}@png"
         
         try:
