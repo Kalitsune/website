@@ -1,5 +1,5 @@
 ---
-title: Building Docker Containers in Jenkins with a Docker-in-Docker Agent
+title: Jenkins Docker-in-Docker Agent
 description: How I set up my dream environment for executing docker based jenkins pipelines.
 date: '06/09/2025'
 icon: https://www.gravatar.com/avatar/c61b120bdaedf42832ad4c9e391b3929?s=120&r=g&d=404
