@@ -119,10 +119,9 @@ echo "Docker daemon started successfully."
 exec su jenkins -s /bin/sh -c '/usr/local/bin/jenkins-agent "$@"' -- jenkins-agent "$@"
 ```
 
-The script first starts the Docker daemon, waits for it to be ready, and then switches to the `jenkins` user to launch the Jenkins agent. This simple but effective script is the key to the container's reliability.
+The script first starts the Docker daemon, waits for it to be ready, and then switches to the `jenkins` user to launch the Jenkins agent.
 
 ### Conclusion
 
-This Docker-in-Docker Jenkins agent provides a powerful and secure way to run your containerized CI/CD pipelines. It's easy to use and provides the isolation needed for a stable build environment.
-
-I plan to set up weekly builds for this image to ensure it stays up-to-date with the latest versions of Jenkins and Docker. Give it a try and let me know what you think!
+I hope this article could be of use to you,
+this container is very useful to me so I hope you'll like it!
