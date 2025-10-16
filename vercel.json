@@ -2,22 +2,7 @@
   "rewrites": [
     {
       "source": "/.well-known/webfinger",
-      "destination": "https://auth.kalitsune.net/.well-known/webfinger"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/.well-known/webfinger",
-      "headers": [
-        {
-          "key": "Content-Type-backup",
-          "value": "application/json"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
+      "destination": "https://cdn.kalitsune.net/.well-known/webfinger"
     }
   ]
 }
