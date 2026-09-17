@@ -9,14 +9,12 @@
                 { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
             ]
         },
+    ],
+    "rewrites": [
         {
-            "rewrites": [
-                {
-                    "source": "/.well-known/matrix/:path*",
-                    "destination": "https://matrix.kalitsune.net/.well-known/matrix/:path*"
-                }
-            ]
+            "source": "/.well-known/matrix/:path*",
+            "destination": "https://matrix.kalitsune.net/.well-known/matrix/:path*"
         }
-
     ]
+
 }
